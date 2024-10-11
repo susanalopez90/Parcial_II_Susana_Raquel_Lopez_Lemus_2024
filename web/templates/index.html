@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre del Proyecto</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+        header nav ul li {
+            margin: 0 1em;
+        }
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            padding: 2em;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+        .card {
+            flex: 1 1 calc(33.333% - 1em);
+            padding: 1em;
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .card {
+                flex: 1 1 calc(50% - 1em);
+            }
+        }
+        @media (max-width: 480px) {
+            .card {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MI Proyecto Practica Parcial II</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <h2>Bienvenida</h2>
+            <p>¡Bienvenido a mi página web!</p>
+        </section>
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <div class="grid">
+                <div class="card">Servicio 1</div>
+                <div class="card">Servicio 2</div>
+                <div class="card">Servicio 3</div>
+            </div>
+        </section>
+    </main>
+    <footer id="contacto">
+        <h2>Contacto</h2>
+        <p>Información adicional aquí.</p>
+    </footer>
+</body>
+</html>
